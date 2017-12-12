@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ioana.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:text="Welcome, dear reader!"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="40dp"
+            app:layout_editor_absoluteY="70dp"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="makeReservationAction"
+            android:text="Make reservation" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="listReservationsAction"
+            android:text="See current reservations" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
